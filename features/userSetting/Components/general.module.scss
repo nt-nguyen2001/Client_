@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.btn_close {
+    margin-left: 20px;
+    transition: all .2s linear;
+    background-color: var(--btn-primary-bg);
+    padding: 5px 20px;
+    border-radius: 5px;
+
+    &:hover {
+        color: var(--error);
+    }
+}
+
+.btn {
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .btn {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 320px) {
+    .btn_close {
+        margin: 5px;
+    }
+}

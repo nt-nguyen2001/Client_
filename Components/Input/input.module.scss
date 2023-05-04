@@ -1,0 +1,24 @@
+.input {
+    background: var(--secondary);
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-top: 10px;
+    overflow-wrap: anywhere;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+    box-sizing: content-box;
+    pointer-events: none;
+}
+
+.input:empty:before {
+    content: attr(data-placeholder);
+    pointer-events: none;
+    color: rgba(214, 214, 214, 0.73);
+}

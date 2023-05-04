@@ -1,0 +1,46 @@
+.portal {
+    position: fixed;
+    z-index: 999999;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.53);
+    top: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--bg-primary);
+        padding: 50px;
+        border-radius: 10px;
+
+        &-btn {
+            display: flex;
+            justify-content: space-between;
+            gap: 90px;
+            margin-top: 80px;
+            height: 100%;
+
+            * {
+                flex: 1;
+                padding: 10px;
+                font-weight: 500;
+                border-radius: 5px;
+                transition: all .2s linear;
+            }
+        }
+
+        &-btn_cancel {
+            color: var(--blue);
+            border: 1px solid var(--blue);
+        }
+
+        &-btn_accept {
+            background-color: var(--bg-text-blue);
+        }
+    }
+}

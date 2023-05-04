@@ -1,0 +1,46 @@
+.avatar {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 0;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: black;
+        box-sizing: content-box;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        border-radius: 100%;
+        left: -5px;
+        top: -5px;
+        z-index: -1;
+    }
+}
+
+.container_friends {
+    position: absolute;
+    margin-top: 20px;
+    right: 5%;
+    display: flex;
+    gap: 16px;
+}
+
+@media (max-width: 426px) {
+    .container_friends {
+        bottom: 0;
+    }
+}
+
+@media (max-width: 426px) {
+    .top {
+        padding-top: 50px;
+    }
+
+    .avatar {
+        height: 100px;
+        width: 100px;
+    }
+}

@@ -1,0 +1,148 @@
+.wrapper {
+    background: var(--bg-primary-2);
+    padding-bottom: 50px;
+    min-height: 100vh;
+
+    // margin-top: 56px;
+    &-avatar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    &-post {
+        background-color: var(--bg-primary);
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        border-radius: 10px;
+        gap: 10px;
+        margin-bottom: 10px;
+
+    }
+}
+
+.main {
+    color: white;
+    background-color: var(--bg-primary);
+    padding: 16px;
+    align-self: flex-start;
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .main {
+        align-self: center;
+    }
+}
+
+@media (max-width: 426px) {
+    .wrapper {
+        &-avatar {
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .main {
+        width: 90%;
+    }
+}
+
+.post {
+    &-inp {
+        border-radius: 999px;
+        height: 40px;
+        outline: none;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+
+
+.background {
+    margin: auto;
+    max-width: 1280px;
+    max-height: 450px;
+    overflow: hidden;
+}
+
+
+.btn {
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    transition: all .2s linear;
+    padding: 8px 15px;
+    flex: 1;
+    white-space: nowrap;
+
+    &.friend {
+        background-color: var(--btn-secondary-bg);
+    }
+
+    &.messages {
+        background-color: var(--btn-tertiary);
+
+    }
+}
+
+
+
+.modal {
+    position: absolute;
+    background-color: var(--bg-primary);
+    border-radius: 5px;
+    padding: 15px 15px;
+    color: white;
+    right: 0;
+    transform: translateY(10px);
+    min-width: 200px;
+    box-shadow: var(--box-shadow-primary);
+
+    &-item {
+        cursor: pointer;
+        min-width: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        transition: all .2s linear;
+    }
+
+    &-item:hover {
+        background-color: var(--bg-primary-hover);
+    }
+
+    &::after {
+        content: '';
+        width: 0;
+        height: 0;
+        top: -10px;
+        right: 0;
+        position: absolute;
+        border-top: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid var(--bg-primary);
+        border-right: 10px solid var(--bg-primary);
+    }
+}
+
+
+.name {
+    color: white;
+    padding-top: 16px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    margin: 80px 0 50px;
+}
+
+.delete {
+    background-color: var(--bg-primary-hover);
+}

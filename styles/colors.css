@@ -1,0 +1,51 @@
+:root {
+}
+
+[data-theme='dark'] {
+  /* Dark mode */
+  --primary: #0f172a;
+  --secondary: #3a3b3c;
+  --tertiary: #8a8d91;
+  --bg-primary: #242526;
+  --primary-hover: #3d3d3e;
+  --bg-primary-2: #18191a;
+
+  --bg-primary-hover: #ffffff1a;
+  --online: #31a24c;
+  --offline: #e41e3f;
+
+  --text-primary: #e4e6eb;
+  --text-secondary: #b0b3b8;
+  --text-link: #b0b3b8;
+  --text-link-hover: #f4ac20;
+  --bg-text-blue: #0084ff;
+  --bg-text-grey: #3e4042;
+
+  --error: #e02020;
+  --success: #52c41a;
+  --blue: #2e89ff;
+
+  --love: #f33e58;
+  --like: #2078f4;
+  --wow: #f7b125;
+  --care: #f7b125;
+  --sad: #f7b125;
+  --haha: #f7b125;
+  --angry: #e9710f;
+
+  --btn-primary: #4d47c3;
+  --btn-secondary: #ffd1ba;
+  --btn-tertiary: #2374e1;
+  --btn-primary-shadow: #4d47c380;
+  --btn-primary-bg: #242526;
+  --btn-secondary-bg: #3a3b3c;
+  --text-primary: #e4e6eb;
+
+  --border-primary-b: #333436;
+
+  --box-shadow-primary: 0 12px 28px 0#00000033, 0 2px 4px 0 #0000001a;
+
+  --inp-primary-bg: #f0efff;
+  --inp-primary-text: black;
+  --inp-primary-placeholder: #a7a3ff;
+}

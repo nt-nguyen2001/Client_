@@ -1,0 +1,31 @@
+.wrapper {
+    padding-top: 16px;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--primary);
+    color: var(--text-primary);
+
+}
+
+.anim {
+    transition: 250ms all linear;
+}
+
+.main {
+    margin: 0 176px;
+    height: 100vh;
+}
+
+@media (max-width: 1439px) {
+    .main {
+        margin: 0 32px;
+    }
+}
+
+@media (max-width: 769px) {
+    .main {
+        padding-bottom: 48px;
+        margin: 0 16px;
+        height: 100%;
+    }
+}

@@ -1,0 +1,20 @@
+.wrapper {
+    position: absolute;
+    display: flex;
+    gap: 8px;
+    top: 0;
+    transform: translateY(-100%);
+    padding: 5px 5px;
+    background-color: var(--bg-primary);
+    border: 1px solid #555555;
+    border-radius: 9999px;
+    z-index: 9999;
+}
+
+.icon {
+    transition: all linear .2s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}

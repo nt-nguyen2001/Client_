@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    margin-bottom: 50px;
+
+}
+
+.error,
+.success {
+    position: absolute;
+    bottom: -100%;
+}
+
+.error {
+    color: var(--error);
+}
+
+.success {
+    color: var(--success);
+}

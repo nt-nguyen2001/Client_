@@ -1,0 +1,69 @@
+.portal {
+    position: fixed;
+    z-index: 999999;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.53);
+    top: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--bg-primary);
+        padding: 20px;
+        border-radius: 10px;
+
+        .modal {
+            &_content {
+                color: var(--text-secondary);
+                font-size: 15px;
+            }
+
+            &_name {
+                font-size: 20px;
+                font-weight: 700;
+                margin: 10px 0;
+            }
+        }
+
+        .btn_container {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+
+            .btn {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 40px;
+                white-space: nowrap;
+
+
+                .icon {
+                    width: 25px;
+                    height: 25px;
+                    padding: 10px;
+                    box-sizing: content-box;
+                    border-radius: 100%;
+                    margin-bottom: 10px;
+
+                    &_close {
+                        background-color: var(--error);
+                    }
+
+                    &_accept {
+                        background-color: var(--success);
+                    }
+                }
+
+            }
+        }
+    }
+}

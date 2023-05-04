@@ -1,0 +1,29 @@
+.close {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    font-size: 24px;
+    line-height: 32px;
+    cursor: pointer;
+    padding: 5px;
+    color: black;
+    box-sizing: content-box;
+    border-radius: 999px;
+    background: rgba(128, 128, 128, 0.603);
+    z-index: 10;
+    transition: all .2s linear;
+}
+
+.container {
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 400px;
+    }
+}
+
+.close:hover {
+    background: rgb(128, 128, 128);
+}

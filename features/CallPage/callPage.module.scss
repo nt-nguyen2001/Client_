@@ -1,0 +1,121 @@
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 30px;
+    position: absolute;
+    z-index: 50;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .item {
+        padding: 10px;
+        box-sizing: content-box;
+        cursor: pointer;
+        border-radius: 100%;
+        background-color: var(--bg-text-grey);
+    }
+
+    .item:hover {
+        transition: all .2s linear;
+        opacity: 0.5;
+    }
+
+    .active {
+        color: white;
+    }
+
+    .inActive {
+        color: var(--text-secondary);
+    }
+
+    .end {
+        background-color: var(--offline);
+    }
+}
+
+.wrapper {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+    color: white;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.users {
+    display: flex;
+    max-height: 100%;
+    // height: 100%;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    .others {
+        min-width: calc((100% - 30px) / 4);
+        display: flex;
+        max-width: 70%;
+        flex: 1;
+        justify-content: center;
+        transform: scaleX(-1);
+
+        * {
+            border-radius: 5px;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+}
+
+.yourCamera {
+    width: 300px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(-1);
+
+    * {
+        border-radius: 10px;
+    }
+}
+
+.iconEnded {
+    // max-height: 600px;
+    width: 100%;
+    height: 100%;
+}
+
+.ended_btn {
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+    background-color: var(--blue);
+}
+
+
+@media (max-width: 769px) {
+    .yourCamera {
+        width: 250px;
+    }
+}
+
+@media (max-width: 426px) {
+    .yourCamera {
+        width: 150px;
+        height: 200px;
+        top: 0;
+    }
+}

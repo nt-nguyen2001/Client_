@@ -1,0 +1,106 @@
+.Love {
+    color: var(--love);
+}
+
+.Like {
+    color: var(--like);
+}
+
+.Angry {
+    color: var(--angry);
+}
+
+.Wow {
+    color: var(--wow);
+}
+
+.Sad {
+    color: var(--sad);
+}
+
+.Care {
+    color: var(--care);
+}
+
+.Haha {
+    color: var(--haha);
+}
+
+.online,
+.offline {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    bottom: 0;
+    right: -1px;
+}
+
+.online {
+    background-color: var(--online);
+}
+
+.offline {
+    background-color: var(--offline);
+}
+
+.modal {
+    position: absolute;
+    border-radius: 5px;
+    color: white;
+    right: 0;
+    transform: translateY(10px);
+    padding: 15px 15px;
+    box-shadow: var(--box-shadow-primary);
+
+    // min-width: 250px;
+    &-primary {
+        background-color: var(--bg-primary);
+
+    }
+
+
+
+    &-second {
+        background-color: var(--bg-primary-2);
+
+    }
+
+    &-item {
+        cursor: pointer;
+        min-width: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        transition: all .2s linear;
+    }
+
+    &-item:hover {
+        background-color: var(--bg-primary-hover);
+    }
+
+    &::after {
+        content: '';
+        width: 0;
+        height: 0;
+        top: -10px;
+        right: 0;
+        position: absolute;
+        border-top: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid;
+        border-right: 10px solid;
+        z-index: 99;
+    }
+
+    &.modal-second::after {
+        border-bottom-color: var(--bg-primary-2);
+        border-right-color: var(--bg-primary-2);
+    }
+
+    &.modal-primary::after {
+        border-bottom-color: var(--bg-primary);
+        border-right-color: var(--bg-primary);
+    }
+}

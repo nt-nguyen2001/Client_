@@ -1,0 +1,98 @@
+@import './colors.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.menu-bar {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.menu-bar > div {
+  width: 150px;
+  padding: 12px;
+  cursor: pointer;
+  user-select: none;
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+.menu-bar > div:hover {
+  background-color: #cccccc;
+}
+
+.menu-bar > .selected {
+  background-color: #dddddd;
+}
+
+.wrapper {
+  padding: 12px;
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+}
+
+.product-item {
+  display: flex;
+  background-color: #eeeeee;
+  margin: 2px 0px 2px 0px;
+}
+
+.product-item > div {
+  width: 50%;
+  margin: 4px;
+}
+
+.product-item > div:last-child {
+  text-align: right;
+}
+
+.product-form {
+  background-color: #eeeeee;
+  padding: 12px;
+}
+
+.product-form input[type='text'],
+.product-form input[type='number'] {
+  border: none;
+  outline: none;
+  padding: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.product-form button {
+  border: none;
+  outline: none;
+  padding: 6px;
+  width: 50%;
+  box-sizing: border-box;
+  margin-top: 10px;
+  float: right;
+  background-color: #dddddd;
+}
+
+.product-form button:disabled {
+  opacity: 0.6;
+}

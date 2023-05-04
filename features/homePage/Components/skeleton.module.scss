@@ -1,0 +1,26 @@
+.main {
+    background-color: var(--bg-primary);
+    border-radius: 10px;
+    height: 300px;
+    width: 600px;
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 426px) {
+    .main {
+        width: 100%;
+    }
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-evenly;
+
+    *+* {
+        margin-left: 20px;
+    }
+}

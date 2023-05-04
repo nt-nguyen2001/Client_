@@ -1,0 +1,25 @@
+.skeleton_anim {
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.skeleton_notAnim {
+    background-color: var(--secondary);
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: var(--secondary);
+    }
+
+    100% {
+        background-color: var(--bg-primary);
+    }
+}
+
+.img {
+    border-radius: 100%;
+}
+
+.text {
+    border-radius: 9999px;
+}

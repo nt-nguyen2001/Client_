@@ -1,0 +1,21 @@
+.modal {
+    position: absolute;
+    right: 0;
+    width: 150px;
+    border-radius: 5px;
+    padding: 10px 5px;
+    background-color: var(--bg-primary);
+    box-shadow: var(--box-shadow-primary);
+
+    .item {
+        text-align: center;
+        transition: all .2s linear;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .item:hover {
+        background-color: var(--btn-secondary-bg);
+    }
+}

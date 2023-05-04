@@ -1,0 +1,85 @@
+.ZoomImage {
+    position: fixed;
+    height: 100%;
+    width: 100vw;
+    top: 0;
+    z-index: 99999;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.505);
+    // padding: 0 20px;
+
+    .list {
+        // background: white;
+        height: 100%;
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            .image {
+                position: relative;
+                width: 650px;
+                height: 100%;
+            }
+
+
+        }
+    }
+
+    .icon {
+        position: absolute;
+        cursor: pointer;
+        right: 20px;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        color: white;
+        z-index: 99;
+        border: 1px solid white;
+        border-radius: 100%;
+        transition: all .2s linear;
+
+        &:hover {
+            color: var(--blue);
+            border-color: var(--blue);
+        }
+    }
+}
+
+.arrow {
+    color: var(--text-secondary);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99999;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 60px;
+    background-color: rgb(54 54 54 / 20%);
+
+    &-wrapper {
+        border-radius: 100%;
+        background-color: var(--bg-text-grey);
+    }
+}
+
+
+
+.left {
+    transform: translate(0, -50%);
+    left: 15px;
+    justify-content: flex-end;
+
+    &:hover {
+        // left: 50px;
+    }
+}
+
+.right {
+    right: 0,
+
+}
